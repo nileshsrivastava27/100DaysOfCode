@@ -28,15 +28,12 @@ TreeNode* sortedArrayToBST(vector<int>& nums) {
         if(left > right){
             return NULL;
         }
-        
 
         int mid = (left + right) / 2;
         TreeNode* temp = new TreeNode(nums[mid]);
-        
 
         temp->left = solve(nums, left, mid-1);
         
-
         temp->right = solve(nums, mid+1 , right);
         return temp;
     }
