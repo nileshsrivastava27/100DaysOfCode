@@ -9,6 +9,7 @@ public:
         int res = 0;
         int left = 0;
         int right = height.size()-1;
+        // max area function to calculate max area.
 
         while(left<=right)
         {
